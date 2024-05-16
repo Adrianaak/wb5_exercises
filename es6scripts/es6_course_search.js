@@ -67,3 +67,14 @@ if (prog200StartDate.length > 0) {
 } else {
     console.log("PROG200 course not found.");
 }
+
+// Find the start date of the PROG200 course
+let theTitleOfProj500 = courses.filter(function (course) {
+    return course.CourseId === "PROJ500";
+});
+
+if (theTitleOfProj500.length > 0) {
+    console.log("The Title of PROJ500 course:", theTitleOfProj500[0].Title);
+} else {
+    console.log("PROJ500 Title not found.");
+}
